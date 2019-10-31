@@ -1,0 +1,1133 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Nick's Creative Design" />
+    <meta name="Description" content="Our web design service is more than just functional, it’s the perfect blend of practicality and aesthetic." />
+    <meta name="keywords" content="web design, graphic design, photography, social media campaigns, search engine optimatization, seo, asheville NC, responsive web design, responsive design, logo, business logo designer, complete marketing package, secure web hosting" />
+    
+    <!--Facebook meta-->
+    <meta property="og:image" content="http://www.nickscreativedesign.com/ncd/img/logo.jpg" />
+    <meta property="og:description" content="Our web design service is more than just functional, it’s the perfect blend of practicality and aesthetic. Our team of highly skilled designers apply their range of talents to the needs of each customer to create a highly responsive online platform that rivals (in quality) some of the world’s most competitive web design agencies." />
+    <meta property="og:url" content="http://www.nickscreativedesign.com" />
+    <meta property="og:title" content="Nick's Creative Design" />
+     <!--End Facebook Meta-->
+     
+     <!--Twitter meta-->
+     <meta name="twitter:card" content="Nick's Creative Design">
+     <meta name="twitter:site" content="@nicksCD">
+     <meta name="twitter:title" content="Complete Marketing Package">
+     <meta name="twitter:description" content="">
+   	 <meta name="twitter:image" content="http://www.nickscreativedesign.com/ncd/img/creative-design-xsmall-logo.png"> 
+     <!--End Twitter meta-->
+    
+    <link href="http://nickscreativedesign.com/" rel="canonical" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="ncd/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="ncd/style.css" type="text/css" />
+	<link rel="stylesheet" href="ncd/css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="ncd/css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="ncd/css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="ncd/css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="ncd/css/font-awesome.min.css" type="text/css" />
+    <link rel="shortcut icon" href="ncd/img/nicks-creative-design-favicon.png" type="nickscreativedesign icon" />
+
+	<link rel="stylesheet" href="ncd/css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="ncd/js/jquery.js"></script>
+	<script type="text/javascript" src="ncd/js/plugins.js"></script>
+
+	<!-- Document Title
+	============================================= -->
+	<title>Nicks Creative Deisgn</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<div id="home" class="page-section page-it"></div>
+
+		<section id="slider" class="slider-parallax full-screen with-header swiper_wrapper clearfix">
+
+			<div class="swiper-container swiper-parent">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide dark headerz">
+						<div class="container clearfix">
+							<div class="slider-caption slider-caption-center">
+								<div data-caption-animate="fadeInUp" margin="0 500 500 0"><img src="ncd/img/nicks-creative-design-logo.png" alt="Creative Web Deisgn Logo Asheville NC" class="logo"/></div>
+								<div data-caption-animate="fadeInUp" data-caption-delay="200"><img src="ncd/img/nicks-creative-design.png" alt="Nick's Creative Design" class="logo2"/>    	                        </div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide dark">
+						<div class="container clearfix">
+							<div class="slider-caption slider-caption-center">
+								<h1>The Complete Marketing Package</h1>
+								<p data-caption-animate="fadeInUp" data-caption-delay="200"></p>
+							</div>
+						</div>
+						<div class="video-wrap">
+							<video poster="ncd/images/videos/explore.jpg" preload="auto" loop autoplay muted>
+								<source src="ncd/images/videos/explore.mp4" type="video/mp4" />
+								<source src="ncd/images/videos/explore.webm" type="video/webm" />
+							</video>
+							<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
+						</div>
+					</div>
+				</div>
+				</div>
+
+			<script>
+				jQuery(document).ready(function($){
+					var swiperSlider = new Swiper('.swiper-parent',{
+						paginationClickable: false,
+						slidesPerView: 1,
+						grabCursor: true,
+						onSwiperCreated: function(swiper){
+							$('[data-caption-animate]').each(function(){
+								var $toAnimateElement = $(this);
+								var toAnimateDelay = $(this).attr('data-caption-delay');
+								var toAnimateDelayTime = 0;
+								if( toAnimateDelay ) { toAnimateDelayTime = Number( toAnimateDelay ) + 750; } else { toAnimateDelayTime = 750; }
+								if( !$toAnimateElement.hasClass('animated') ) {
+									$toAnimateElement.addClass('not-animated');
+									var elementAnimation = $toAnimateElement.attr('data-caption-animate');
+									setTimeout(function() {
+										$toAnimateElement.removeClass('not-animated').addClass( elementAnimation + ' animated');
+									}, toAnimateDelayTime);
+								}
+							});
+						},
+						onSlideChangeStart: function(swiper){
+							$('#slide-number-current').html(swiper.activeIndex + 1);
+							$('[data-caption-animate]').each(function(){
+								var $toAnimateElement = $(this);
+								var elementAnimation = $toAnimateElement.attr('data-caption-animate');
+								$toAnimateElement.removeClass('animated').removeClass(elementAnimation).addClass('not-animated');
+							});
+						},
+						onSlideChangeEnd: function(swiper){
+							$('#slider .swiper-slide').each(function(){
+								if($(this).find('video').length > 0) { $(this).find('video').get(0).pause(); }
+							});
+							$('#slider .swiper-slide:not(".swiper-slide-active")').each(function(){
+								if($(this).find('video').length > 0) {
+									if($(this).find('video').get(0).currentTime != 0 ) $(this).find('video').get(0).currentTime = 0;
+								}
+							});
+							if( $('#slider .swiper-slide.swiper-slide-active').find('video').length > 0 ) { $('#slider .swiper-slide.swiper-slide-active').find('video').get(0).play(); }
+
+							$('#slider .swiper-slide.swiper-slide-active [data-caption-animate]').each(function(){
+								var $toAnimateElement = $(this);
+								var toAnimateDelay = $(this).attr('data-caption-delay');
+								var toAnimateDelayTime = 0;
+								if( toAnimateDelay ) { toAnimateDelayTime = Number( toAnimateDelay ) + 300; } else { toAnimateDelayTime = 300; }
+								if( !$toAnimateElement.hasClass('animated') ) {
+									$toAnimateElement.addClass('not-animated');
+									var elementAnimation = $toAnimateElement.attr('data-caption-animate');
+									setTimeout(function() {
+										$toAnimateElement.removeClass('not-animated').addClass( elementAnimation + ' animated');
+									}, toAnimateDelayTime);
+								}
+							});
+						}
+					});
+
+					$('#slider-arrow-left').on('click', function(e){
+						e.preventDefault();
+						swiperSlider.swipePrev();
+					});
+
+					$('#slider-arrow-right').on('click', function(e){
+						e.preventDefault();
+						swiperSlider.swipeNext();
+					});
+
+					$('#slide-number-current').html(swiperSlider.activeIndex + 1);
+					$('#slide-number-total').html(swiperSlider.slides.length);
+				});
+			</script>
+
+		</section>
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="ncd/index.html" class="standard-logo" data-dark-logo="ncd/img/nicks-creative-design-small-logo.png"><img src="ncd/img/nicks-creative-design-small-logo.png" alt="Graphic Design Logo Asheville NC"></a>
+						<a href="ncd/index.html" class="retina-logo" data-dark-logo="ncd/img/nicks-creative-design-small-logo.png"><img src="ncd/img/nicks-creative-design-small-logo.png" alt="small logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
+
+						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1500">
+							<li><a href="#" data-href="#home"><div>Home</div></a></li>
+							<li><a href="#" data-href="#section-about"><div>About</div></a></li>
+							<li><a href="#" data-href="#section-work"><div>Work</div></a></li>
+<!--							<li><a href="#" data-href="#section-team"><div>Team</div></a></li>-->
+							<li><a href="#" data-href="#section-services"><div>Services</div></a></li>
+<!--							<li><a href="#" data-href="#section-pricing"><div>Pricing</div></a></li>-->
+<!--							<li><a href="#" data-href="#section-testimonials" data-offset="60"><div>Testimonials</div></a></li>-->
+							<li><a href="#" data-href="#section-contact"><div>Contact</div></a></li>
+						</ul>
+
+						<!-- Top Search
+						============================================= -->
+						<!--<div id="top-search">
+							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+							<form action="search.html" method="get">
+								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+							</form>
+						</div>--><!-- #top-search end -->
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<div class="clear"></div>
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+<!-- About -->			
+			<section id="section-about" class="page-section">
+
+					<div class="container clearfix">
+
+						<div class="heading-block center">
+							<h2>Creative <span>Responsive</span> Design</h2>
+							<span>The Complete Marketing Package</span>
+						</div>
+
+						<div class="col_one_third nobottommargin">
+							<div class="feature-box media-box">
+								<div class="fbox-media">
+									<img src="ncd/img/creative_thinking.jpg" alt="Web Marketing Asheville NC">
+								</div>
+								<div class="fbox-desc">
+									<h3>Creative Thinking<span class="subtitle">Web Marketings best team in WNC!</span></h3>
+									<p>We are more than just a web design service. It’s a selection of creative top-tiered artists looking to revolutionize your online presence and create custom designs unique to your business. We offer a personalized custom online experience to all new and existing customers. </p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col_one_third nobottommargin">
+							<div class="feature-box media-box">
+								<div class="fbox-media">
+									<img src="ncd/img/fully_responsive.jpg" alt="Fully Responsive Website Design Asheville">
+								</div>
+								<div class="fbox-desc">
+									<h3>Fully Responsive<span class="subtitle">Fits any PC, Tablet or Portable Devices!</span></h3>
+									<p>We understand the demand for mobile browsing. We offer comprehensive mobile design services that will introduce your customers to a more convenient corner of online business. Few companies take the time to fully design their mobile browsing experience which makes our service a highly competitive option for you to explore.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col_one_third nobottommargin col_last">
+							<div class="feature-box media-box">
+								<div class="fbox-media">
+									<img src="ncd/img/professional_design.jpg" alt="Professional Design Western North Carolina">
+								</div>
+								<div class="fbox-desc">
+									<h3>Professional Design<span class="subtitle">Designs built from the ground up!</span></h3>
+									<p>Our team of experienced creative designers are highly skilled in web marketing. They use their knowledge to analyze the needs of customers through User Interaction (UI) and User Experience (UX) data collection. This information is used to create a personalized web experience and the result is astounding. This is a one stop shop for customers that appeals to their online marketing needs.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+
+					</div>
+
+					
+
+				</section>
+<!-- End About-->
+
+<!-- Our Work -->
+			<section id="section-work" class="page-section topmargin-lg">
+
+					<div class="heading-block center">
+						<h2>Our Work</h2>
+						<span>Some of the awesome designs we've created.</span>
+					</div>
+
+					<div class="container clearfix center">
+
+						<!-- Portfolio Items
+						============================================= -->
+						<div id="portfolio" class="portfolio-nomargin clearfix">
+
+							<article class="portfolio-item pf-media pf-icons">
+								<div class="portfolio-image">
+									<img src="ncd/img/american-top-team-asheville-webdesign.jpg" alt="American Top Team Asheville Web Design">
+								<div class="portfolio-overlay">
+										<a href="ncd/img/american-top-team-asheville-webdesign-full.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										<a href="ncd/services/web_design.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>			
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="ncd/services/web_design.html">American Top Team </a></h3>
+									<span><a href="ncd/services/web_design.html">Website</a></span>
+								</div>
+							</article>
+
+							<article class="portfolio-item pf-media pf-icons">
+								<div class="portfolio-image">
+										<img src="ncd/img/gustina/anthony-gustina-photography-cabin-thumb.jpg" alt="gustina photo cabin">
+									<div class="portfolio-overlay">
+										<a href="ncd/img/gustina/anthony-gustina-photography-cabin.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										<a href="ncd/services/photography.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									</div>
+									</div>
+								<div class="portfolio-desc">
+									<h3><a href="ncd/services/photography.html">Hot Springs Cabin</a></h3>
+									<span><a href="ncd/services/photography.html">Photography</a></span>
+								</div>
+							</article>
+
+							<article class="portfolio-item pf-uielements pf-media">
+								<div class="portfolio-image">
+										<img src="ncd/img/gustina/hydroreactions.png" alt="Hydro Reations Logo Design">
+								<div class="portfolio-overlay">
+									<a href="ncd/img/gustina/hydroreactions.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="ncd/services/graphic.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="ncd/services/graphic.html">Hydro Reactions</a></h3>
+									<span><a href="ncd/services/graphic.html">Logo</a></span>
+								</div>
+							</article>
+
+							<article class="portfolio-item pf-media pf-icons">
+								<div class="portfolio-image">
+									<img src="ncd/img/gustina/bearwallowguides.jpg" alt="Bear Wallow Guides">
+									<div class="portfolio-overlay">
+										<a href="ncd/img/gustina/bearwallowguides.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										<a href="ncd/services/graphic.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									</div>
+									</div>
+								<div class="portfolio-desc">
+									<h3><a href="ncd/services/graphic.html">Bear Wallow Guides</a></h3>
+									<span><a href="ncd/services/graphic.html">Logo</a></span>
+								</div>
+								
+							</article>
+							
+							<article class="portfolio-item pf-uielements pf-media">
+								<div class="portfolio-image">
+									<img src="ncd/img/gustina/anthony-gustina-photography-wedding-thumb.jpg" alt="wedding photo">
+								<div class="portfolio-overlay">
+									<a href="ncd/img/gustina/anthony-gustina-photography-wedding.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="ncd/services/photography.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="ncd/services/photography.html">Wedding</a></h3>
+									<span><a href="ncd/services/photography.html">Photography</a></span>
+								</div>
+							</article>
+
+							<article class="portfolio-item pf-uielements pf-media">
+								<div class="portfolio-image">
+										<img src="ncd/img/selah-graces-journey-webdesign.jpg" alt="Selah Grace's Journey Webdesign">
+								<div class="portfolio-overlay">
+									<a href="ncd/img/selah-graces-journey-webdesign-full.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="ncd/services/web_design.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="ncd/services/web_design.html">Selah Graces Journey</a></h3>
+									<span><a href="ncd/services/web_design.html">Website</a></span>
+								</div>
+							</article>
+										
+							<article class="portfolio-item pf-uielements pf-media">
+								<div class="portfolio-image">
+										<img src="ncd/img/gustina/melfest2015.jpg" alt="Mel Fest 2015 Logo">
+								<div class="portfolio-overlay">
+									<a href="ncd/img/gustina/melfest2015.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="ncd/services/graphic.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="ncd/services/graphic.html">Mel Fest 2015</a></h3>
+									<span><a href="ncd/services/graphic.html">Logo</a></span>
+								</div>
+							</article>
+							
+							<article class="portfolio-item pf-uielements pf-media">
+								<div class="portfolio-image">
+										<img src="ncd/img/car-dr-asheville-webdesign.jpg" alt="Car Dr Asheville Website">
+								<div class="portfolio-overlay">
+									<a href="ncd/img/car-dr-asheville-webdesign-full.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="ncd/services/web_design.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="ncd/services/web_design.html">Car Dr Asheville</a></h3>
+									<span><a href="ncd/services/web_design.html">Website</a></span>
+								</div>
+							</article>
+							
+							<article class="portfolio-item pf-uielements pf-media">
+								<div class="portfolio-image">
+										<img src="ncd/img/gustina/jacksjourneymenrenovations.jpg" alt="Jacks Journeymen Renovations Logo">
+								<div class="portfolio-overlay">
+									<a href="ncd/img/gustina/jacksjourneymenrenovations.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="ncd/services/graphic.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="ncd/services/graphic.html">Jacks Journeymen</a></h3>
+									<span><a href="ncd/services/graphic.html">Logo</a></span>
+								</div>
+							</article>
+							
+							<article class="portfolio-item pf-uielements pf-media">
+								<div class="portfolio-image">
+										<img src="ncd/img/asheville-counseling-center-webdesign.jpg" alt="Asheville Counseling Center website design">
+								<div class="portfolio-overlay">
+									<a href="ncd/img/asheville-counseling-center-webdesign-full.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="ncd/services/web_design.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="ncd/services/web_design.html">Asheville Counseling Center</a></h3>
+									<span><a href="ncd/services/web_design.html">Website</a></span>
+								</div>
+							</article>
+							
+							<article class="portfolio-item pf-uielements pf-media">
+								<div class="portfolio-image">
+										<img src="ncd/img/gustina/anthony-gustina-photography-train-thumb.jpg" alt="Toy Train Photo">
+								<div class="portfolio-overlay">
+									<a href="ncd/img/gustina/anthony-gustina-photography-train.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="ncd/services/photography.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="ncd/services/photography.html">Toy Train</a></h3>
+									<span><a href="ncd/services/photography.html">Photography</a></span>
+								</div>
+							</article>
+							
+							<article class="portfolio-item pf-media pf-icons">
+								<div class="portfolio-image">
+									<img src="ncd/img/hairz-angelz-webdesign.jpg" alt="Hairz Angelz Asheville Web Design">
+									<div class="portfolio-overlay">
+										<a href="ncd/img/hairz-angelz-webdesign-full.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										<a href="ncd/services/web_design.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									</div>
+									</div>
+								<div class="portfolio-desc">
+									<h3><a href="ncd/services/web_design.html">Hairz Angelz</a></h3>
+									<span><a href="ncd/services/web_design.html">Website</a></span>
+								</div>
+							</article>
+							
+							
+						</div><!-- #portfolio end -->
+
+					</div>
+
+				</section>
+<!-- End Our Work -->
+
+
+<!-- Team -->
+				<section id="section-team" class="page-section topmargin-lg">
+
+			 <div class="heading-block center">
+						<h2>The Team</h2>
+						<span>People who have contributed enormously to the Company.</span>
+					</div>
+
+					<div class="container clearfix">
+
+						<div class="col-md-6 bottommargin">
+
+							<div class="team team-list clearfix">
+								<div class="team-image">
+									<img src="ncd/img/nick_simpson.jpg" alt="John Doe">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>Nick Simpson</h4><span>Web Design/Web Developer</span></div>
+									<div class="team-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat assumenda similique unde mollitia.</div>
+									<a href="#" class="social-icon si-rounded si-small si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#" class="social-icon si-rounded si-small si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon si-rounded si-small si-gplus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									</a>
+                                    <a href="#" class="social-icon si-rounded si-small si-gplus">
+										<i class="icon-instagram"></i>
+										<i class="icon-instagram"></i>
+									</a>
+                                    <a href="#" class="social-icon si-rounded si-small si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-md-6 bottommargin">
+
+							<div class="team team-list clearfix">
+								<div class="team-image">
+									<img src="ncd/img/4.jpg" alt="Nix Maxwell">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>Anthony Gustina</h4><span>Photographer/Graghic Design</span></div>
+									<div class="team-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat assumenda similique unde mollitia.</div>
+									<a href="#" class="social-icon si-rounded si-small si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#" class="social-icon si-rounded si-small si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon si-rounded si-small si-gplus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									</a>
+                                     <a href="#" class="social-icon si-rounded si-small si-gplus">
+										<i class="icon-instagram"></i>
+										<i class="icon-instagram"></i>
+									</a>
+                                    <a href="#" class="social-icon si-rounded si-small si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="col-md-6 bottommargin">
+
+							<div class="team team-list clearfix">
+								<div class="team-image">
+									<img src="ncd/img/2.jpg" alt="Josh Clark">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>Cleveland Tucker</h4><span>UI/UX Design</span></div>
+									<div class="team-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat assumenda similique unde mollitia.</div>
+									<a href="#" class="social-icon si-rounded si-small si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#" class="social-icon si-rounded si-small si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon si-rounded si-small si-gplus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									</a>
+                                     <a href="#" class="social-icon si-rounded si-small si-gplus">
+										<i class="icon-instagram"></i>
+										<i class="icon-instagram"></i>
+									</a>
+                                    <a href="#" class="social-icon si-rounded si-small si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-md-6 bottommargin">
+
+							<div class="team team-list clearfix">
+								<div class="team-image">
+									<img src="ncd/img/8.jpg" alt="Mary Jane">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>Jasmin Athos</h4><span>Social Media/Content</span></div>
+									<div class="team-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat assumenda similique unde mollitia.</div>
+									<a href="#" class="social-icon si-rounded si-small si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#" class="social-icon si-rounded si-small si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon si-rounded si-small si-gplus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									</a>
+                                     <a href="#" class="social-icon si-rounded si-small si-gplus">
+										<i class="icon-instagram"></i>
+										<i class="icon-instagram"></i>
+									</a>
+                                    <a href="#" class="social-icon si-rounded si-small si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="clear"></div>
+
+					</div>-->
+
+				<!--Video	<div class="section parallax" style="background-image: url('img/nicks-creative-design-background.jpg'); padding: 80px 20px;" data-stellar-background-ratio="0.3">
+						<iframe width="400" height="200" src="https://www.youtube.com/embed/lqxyCsTw780" frameborder="0" allowfullscreen></iframe>
+					</div> -->
+
+				</section>
+<!-- End Team -->
+
+<!-- Services -->
+			<section id="section-services" class="page-section topmargin-lg">
+
+					<div class="heading-block center bottommargin-lg">
+						<h2>Services</h2>
+						<span>What we can do for you.</span>
+					</div>
+
+					<div class="container clearfix">
+
+						<div class="col_half">
+							<div class="feature-box   nobottomborder" data-animate="fadeIn">
+								<div class="fbox-icon">
+									<i class="icon-screen"></i>
+								</div>
+								<h3>Responsive Web Design</h3>
+								<p>Our web design service is more than just functional, it’s the perfect blend of practicality and aesthetic. Our team of highly skilled designers apply their range of talents to the needs of each customer to create a highly responsive online platform that rivals (in quality) some of the world’s most competitive web design agencies.</p>
+							</div>
+						</div>
+
+						<div class="col_half">
+							<div class="feature-box" data-animate="fadeIn" data-delay="100">
+								<div class="fbox-icon">
+									<i class="icon-phone-portrait"></i>
+								</div>
+								<h3>Mobile Apps</h3>
+								<p>Our custom mobile app design service works to create engaging and entertaining apps for clients to incorporate into their business model. We understand the inner workings of the saturated app world and seek to create a unique app for our clients that is both memorable and highly functional. Thereby, giving them an edge over their competitors.</p>
+							</div>
+						</div>
+                                    
+                        <div class="clear"></div>
+                        
+                        <div class="col_half">
+							<div class="feature-box" data-animate="fadeIn" data-delay="100">
+								<div class="fbox-icon">
+									<i class="icon-users2"></i>
+								</div>
+								<h3>Social Media Marketing</h3>
+								<p>We work to provide each client with a tailor-made social media strategy. This will work to engage existing customers and attract new ones in an effort to generate a growth in audience that is con-sistent with preexisting and newly devised business plans. We understand the inner workings of social media marketing and apply our knowledge to each unique customer.</p>
+							</div>
+						</div>
+
+						<div class="col_half">
+							<div class="feature-box" data-animate="fadeIn" data-delay="100">
+								<div class="fbox-icon">
+									<i class="icon-search2"></i>
+								</div>
+								<h3>SEO</h3>
+								<p>Search Engine Optimization (SEO) is the future of business and we understand the need to place our clients at the top of search engines page. Using tried and tested techniques in addition to our detailed understanding of SEO we work on an individual basis with clients and help them achieve the results necessary to improve their business.</p>
+							</div>
+						</div>
+                        
+                         <div class="clear"></div>
+                        
+                        
+
+						<div class="col_half nobottommargin">
+							<div class="feature-box" data-animate="fadeIn" data-delay="100">
+								<div class="fbox-icon">
+									<i class="icon-picture"></i>
+								</div>
+								<h3>Custom Logo</h3>
+								<p>Our team of talented graphic designers are able to create unique, custom logos for a wide variety of businesses. Using their understanding of competitive industries, and an appreciation for the power of a standout logo, our designers are able to create compelling images that help boost the marketability of a company and create a more memorable experience.</p>
+							</div>
+						</div>
+
+						<div class="col_half">
+							<div class="feature-box" data-animate="fadeIn" data-delay="100">
+								<div class="fbox-icon">
+									<i class="icon-camera2"></i>
+								</div>
+								<h3>photography</h3>
+								<p>Nick’s Creative Design prioritizes quality. We don’t settle for stock images and have chosen in-stead to partner with <a href="http://www.gustinaphoto.com">Gustina Photography</a> in the interest of providing our clients with the highest quality images available conveniently and locally. We believe that customers ultimately value quality which is why we collaborate with artists that share our same values.</p>
+							</div>
+						</div>                                           
+
+						<div class="clear"></div>
+                        
+                        <div class="col_half nobottommargin">
+							<div class="feature-box" data-animate="fadeIn" data-delay="100">
+								<div class="fbox-icon">
+								   <i class="icon-cloud"></i>
+								</div>
+                                
+								<h3>Secure Web Hosting</h3>
+								<p>At Nick’s Creative Design we put the wellbeing of our customers at the forefront of our business and this includes providing secure web hosting to each of our customers. We work hard to ensure that our clients are protected from online threats and that our safety measures are constantly up-dated to remain current with the latest methods of security.</p>
+							</div>
+						</div>
+
+						<div class="col_half">
+							<div class="feature-box" data-animate="fadeIn" data-delay="100">
+								<div class="fbox-icon">
+									<!--<a href="services/content.html">--><i class="icon-vcard"></i>
+								</div>
+								<h3>Business Cards & More</h3>
+								<p>In addition to online services our team of creative and innovative designers apply their skills to print products such as business cards. We are experienced and well versed in the needs of modern businesses. Our print products often prove to be as effective as our online services which is a true feat in a digital world.</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="divider divider-short divider-center topmargin-lg"><i class="icon-star3"></i></div>
+
+				</section>
+<!-- End Services -->
+
+<!--Pricing
+				<section id="section-pricing" class="page-section topmargin-lg">
+
+					<div class="heading-block center">
+						<h2>Special Offers</h2>
+						<span>We offer Flexible Pricing Options.</span>
+					</div>
+
+					<div class="container clearfix">
+
+						<div class="pricing bottommargin clearfix">
+
+							<div class="col-md-3" data-animate="fadeInLeft">
+
+								<div class="pricing-box">
+									<div class="pricing-title">
+										<h3>Wordpress Site</h3>
+									</div>
+									<div class="pricing-price">
+										<span class="price-unit">$</span>400<span class="price-tenure">.00</span>
+									</div>
+									<div class="pricing-features">
+										<ul>
+											<li><strong>3</strong> pages</li>
+											<li>Hosting offer</li>
+											<li><strong>500 </strong>Words each page</li>
+											<li><strong>1</strong> Blog</li>
+											<li><strong>2</strong> Email Clients</li>
+										</ul>
+									</div>
+									<div class="pricing-action">
+										<a href="#" class="btn btn-danger btn-block btn-lg">Buy</a>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-md-3" data-animate="fadeInDown"  data-delay="250">
+
+								<div class="pricing-box best-price">
+									<div class="pricing-title">
+										<h3>Complete Marketing Package</h3>
+										<span>Most Popular</span>
+									</div>
+									<div class="pricing-price">
+										<span class="price-unit">$</span>3,500<span class="price-tenure">.00</span>
+									</div>
+									<div class="pricing-features">
+										<ul>
+											<li><strong>5</strong> Pages</li>
+											<li>Logo Design</li>
+											<li>Photography</li>
+											<li>Social Media Campaign</li>
+											<li><i class="icon-star3"></i>
+											<i class="icon-star3"></i>
+											<i class="icon-star3"></i>
+											<i class="icon-star3"></i>
+											<i class="icon-star3"></i></li>
+										</ul>
+									</div>
+									<div class="pricing-action">
+										<a href="#" class="btn btn-danger btn-block btn-lg bgcolor border-color">Buy</a>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-md-3" data-animate="fadeInUp" data-delay="500">
+
+								<div class="pricing-box">
+									<div class="pricing-title">
+										<h3>HTML Website</h3>
+									</div>
+									<div class="pricing-price">
+										<span class="price-unit">$</span>1,000<span class="price-tenure">.00</span>
+									</div>
+									<div class="pricing-features">
+										<ul>
+											<li><strong>Full</strong> Access</li>
+											<li><i class="icon-code"></i> Source Files</li>
+											<li><strong>500</strong> User Accounts</li>
+											<li><strong>3 Years</strong> License</li>
+											<li>Phone &amp; Email Support</li>
+										</ul>
+									</div>
+									<div class="pricing-action">
+										<a href="#" class="btn btn-danger btn-block btn-lg">Buy</a>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-md-3" data-animate="fadeInRight" data-delay="250">
+
+								<div class="pricing-box">
+									<div class="pricing-title">
+										<h3>Web Hosting</h3>
+									</div>
+									<div class="pricing-price">
+										<span class="price-unit">$</span>40<span class="price-tenure">/mo</span>
+									</div>
+									<div class="pricing-features">
+										<ul>
+											<li><strong>Full</strong> Access</li>
+											<li><i class="icon-code"></i> Source Files</li>
+											<li><strong>1000</strong> User Accounts</li>
+											<li><strong>5 Years</strong> License</li>
+											<li>Phone &amp; Email Support</li>
+										</ul>
+									</div>
+									<div class="pricing-action">
+										<a href="#" class="btn btn-danger btn-block btn-lg">Buy</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+-->
+
+<!-- Testimonials -->
+				<section id="section-testimonials" class="page-section section parallax dark testimonalz" data-stellar-background-ratio="0.3">
+
+					<div class="container clearfix">
+
+						<div class="col_half nobottommargin">&nbsp;</div>
+
+						<div class="col_half nobottommargin col_last paddingleft">
+
+							<div class="heading-block center">
+								<h4>What Clients say?</h4>
+							</div>
+
+							<div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
+								<div class="flexslider">
+									<div class="slider-wrap">
+										<div class="slide">
+										<div class="testi-content">
+					  <p>Nick created a great website for me. It looks beautiful and has gotten me a lot of calls about my services. Just what I was wanting.</p>
+												<div class="testi-meta">
+													Guy Morginstien 
+												  <span>Asheville Counseling Center.</span>
+												</div>
+										  </div>
+									  </div>
+										<div class="slide">
+											<div class="testi-content">
+												<p>Nick's Creative Design have been superb. They respond very quickly and go above and beyond to help.</p>
+												<div class="testi-meta">
+													Chris Sawtelle 
+													<span>American Top Team Asheville.</span>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+<!-- End Testimonials -->
+
+<!-- Contact -->
+				<section id="section-contact" class="page-section">
+
+					<div class="heading-block title-center">
+						<h2>Get in Touch with us</h2>
+						<span>Still have Questions? Contact Us using the Form below.</span>
+					</div>
+
+					<div class="container clearfix">
+
+						<!-- Contact Form
+						============================================= -->
+						<div class="col_half">
+
+							<div class="fancy-title title-dotted-border">
+								<h3>Send us an Email</h3>
+							</div>
+
+							<div id="contact-form-result" data-notify-type="success" data-notify-msg="<i class=icon-ok-sign></i> Message Sent Successfully!"></div>
+
+							<form class="nobottommargin" id="template-contactform" name="template-contactform" action="ncd/include/sendemail.php" method="post">
+
+							<div class="form-process"></div>
+
+							<div class="col_one_third">
+								<label for="template-contactform-name">Name <small>*</small></label>
+								<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
+							</div>
+
+							<div class="col_one_third">
+								<label for="template-contactform-email">Email <small>*</small></label>
+								<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
+							</div>
+
+							<div class="col_one_third col_last">
+								<label for="template-contactform-phone">Phone</label>
+								<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control" />
+							</div>
+
+							<div class="clear"></div>
+
+							<div class="col_two_third">
+								<label for="template-contactform-subject">Subject <small>*</small></label>
+								<input type="text" id="template-contactform-subject" name="template-contactform-subject" value="" class="required sm-form-control" />
+							</div>
+
+							
+
+							<div class="clear"></div>
+
+							<div class="col_full">
+								<label for="template-contactform-message">Message <small>*</small></label>
+								<textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
+							</div>
+
+							<div class="col_full hidden">
+								<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+							</div>
+
+							<div class="col_full">
+								<button class="button button-3d nomargin" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
+							</div>
+
+						</form>
+
+						<script type="text/javascript">
+
+							$("#template-contactform").validate({
+								submitHandler: function(form) {
+									$('.form-process').fadeIn();
+									$(form).ajaxSubmit({
+										target: '#contact-form-result',
+										success: function() {
+											$('.form-process').fadeOut();
+											$('#template-contactform').find('.sm-form-control').val('');
+											$('#contact-form-result').attr('data-notify-msg', $('#contact-form-result').html()).html('');
+											SEMICOLON.widget.notifications($('#contact-form-result'));
+										}
+									});
+								}
+							});
+
+						</script>
+
+						</div><!-- Contact Form End -->
+
+						<!-- Google Map
+						============================================= -->
+						<div class="col_half col_last">
+
+							
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d415240.6204327034!2d-82.67665098741837!3d35.60140527027319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88598ca93c0f6f09%3A0x94ef31c106343a5d!2sAsheville%2C+NC!5e0!3m2!1sen!2sus!4v1481987848508" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+							
+							
+						</div><!-- Google Map End -->
+
+						<!-- Contact Info
+						============================================= -->
+						<div class="col_full nobottommargin clearfix">
+
+							<div class="col_one_fourth">
+								<div class="feature-box fbox-center fbox-bg fbox-plain">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-map-marker2"></i></a>
+									</div>
+									<h3>Our Headquarters<span class="subtitle">Asheville, NC</span></h3>
+								</div>
+							</div>
+
+							<div class="col_one_fourth">
+								<div class="feature-box fbox-center fbox-bg fbox-plain">
+									<div class="fbox-icon">
+										<a href="tel:828-779-3002"><i class="icon-phone3"></i></a>
+									</div>
+									<h3>Contact us by phone at<span class="subtitle">(828) 779 3002</span></h3>
+								</div>
+							</div>
+
+							<div class="col_one_fourth">
+								<div class="feature-box fbox-center fbox-bg fbox-plain">
+									<div class="fbox-icon">
+										<a href="http://www.facebook.com/nickscreativedesign"><i class="icon-facebook2"></i></a>
+									</div>
+									<h3>Like us on Facebook<span class="subtitle">Nickscreativedesign</span></h3>
+								</div>
+							</div>
+
+							<div class="col_one_fourth col_last">
+								<div class="feature-box fbox-center fbox-bg fbox-plain">
+									<div class="fbox-icon">
+										<a href="http://www.twitter.com/NicksCD"><i class="icon-twitter2"></i></a>
+									</div>
+									<h3>Follow us on Twitter<span class="subtitle">@nicksCD</span></h3>
+								</div>
+							</div>
+
+						</div><!-- Contact Info End -->
+
+					</div>
+
+				</section>
+<!-- End Contact -->
+
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						<h3>Nick's <span>Creative</span> Design</h3>
+
+						Copyrights &copy; 2016 All Rights Reserved by Nick's Creative Design.
+					</div>
+
+					<div class="col_half col_last tright">
+                    
+						<div class="fright clearfix">
+							<a href="http://www.facebook.com/nickscreativedesign" class="social-icon si-small si-borderless nobottommargin si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+
+							<a href="http://www.twitter.com/NicksCD" class="social-icon si-small si-borderless nobottommargin si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+
+<!--
+							<a href="#" class="social-icon si-small si-borderless nobottommargin si-gplus">
+								<i class="icon-gplus"></i>
+								<i class="icon-gplus"></i>
+							</a>
+							
+							<a href="#" class="social-icon si-small si-borderless nobottommargin si-pinterest">
+								<i class="icon-pinterest"></i>
+								<i class="icon-pinterest"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless nobottommargin si-vimeo">
+								<i class="icon-vimeo"></i>
+								<i class="icon-vimeo"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless nobottommargin si-github">
+								<i class="icon-github"></i>
+								<i class="icon-github"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless nobottommargin si-yahoo">
+								<i class="icon-yahoo"></i>
+								<i class="icon-yahoo"></i>
+							</a>
+							-->
+
+							<a href="http://www.linkedin.com/in/jamesnsimpson" class="social-icon si-small si-borderless nobottommargin si-linkedin">
+								<i class="icon-linkedin"></i>
+								<i class="icon-linkedin"></i>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="ncd/js/functions.js"></script>
+
+</body>
+</html>
